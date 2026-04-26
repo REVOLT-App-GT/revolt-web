@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVOLT - Misael Juan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-ui">
+        <input type="text" class="search-bar" placeholder="Buscar deportes, técnicas...">
+        <button class="icon-btn" onclick="openBlock('p-notif')">🔔</button>
+    </header>
+
+    <main class="main-content">
+        <section id="p-home" class="block-section active-block">
+            <div class="video-card">
+                <div class="video-box">
+                    <span>Video Técnica de Salida</span>
+                </div>
+                <div class="side-actions">
+                    <button class="action-btn" onclick="react(this)">❤️</button>
+                    <button class="action-btn">💬</button>
+                    <button class="action-btn">⭐</button>
+                </div>
+                <div class="video-info">
+                    <p><b>@AtletaGT</b></p>
+                    <small>Excelente postura en la salida.</small>
+                </div>
+            </div>
+        </section>
+
+        <section id="p-learn" class="block-section">
+            <h3 style="color: #ffcc00; padding: 15px;">Educación & Técnica</h3>
+            <div class="item-row">🏃 Técnica de Carrera</div>
+            <div class="item-row">🧠 Neuroeducación</div>
+            <div class="item-row">💎 Diamond League</div>
+        </section>
+
+        <section id="p-profile" class="block-section">
+            <div class="profile-card">
+                <div class="avatar">MJ</div>
+                <h3>Misael Juan</h3>
+                <p>Estudiante de Educación Física</p>
+                <div class="stats-grid">
+                    <div class="stat-item"><span>1.2k</span><br><small>Seguidores</small></div>
+                    <div class="stat-item"><span>450</span><br><small>Siguiendo</small></div>
+                    <div class="stat-item"><span>8.5k</span><br><small>Likes</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="p-cash" class="block-section">
+            <div class="wallet-card">
+                <div class="money-box">
+                    <small>Saldo Acumulado</small>
+                    <h1 id="saldo">Q 0.00</h1>
+                </div>
+                <button class="btn-gold">Retirar Fondos</button>
+            </div>
+        </section>
+
+        <section id="p-notif" class="block-section">
+            <h3 style="color: #ffcc00; padding: 15px;">Notificaciones</h3>
+            <div class="item-row">❤️ A alguien le gustó tu video.</div>
+            <div class="item-row">👤 Nuevo seguidor.</div>
+        </section>
+    </main>
+
+    <button class="btn-plus" onclick="alert('Subir video...')">+</button>
+
+    <nav class="nav-bar">
+        <div class="nav-link active" onclick="openBlock('p-home', this)">
+            <span class="nav-ico">🏠</span>
+            <small>Inicio</small>
+        </div>
+        <div class="nav-link" onclick="openBlock('p-learn', this)">
+            <span class="nav-ico">📚</span>
+            <small>Aprender</small>
+        </div>
+        <div class="nav-link" onclick="openBlock('p-profile', this)">
+            <span class="nav-ico">👤</span>
+            <small>Perfil</small>
+        </div>
+        <div class="nav-link" onclick="openBlock('p-cash', this)">
+            <span class="nav-ico">💰</span>
+            <small>Cobrar</small>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
